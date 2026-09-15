@@ -480,13 +480,19 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: space-between;
         }
 
         .teach-card:hover {
             transform: translateY(-6px);
             box-shadow: 0 12px 30px rgba(106, 17, 203, 0.12);
             border-color: #6a11cb;
+        }
+
+        .teach-card-content-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .teach-img-wrapper {
@@ -521,8 +527,30 @@
             font-size: 0.95rem;
             color: #555555;
             line-height: 1.6;
-            margin: 0;
+            margin: 0 0 20px 0;
             text-align: left;
+            flex-grow: 1;
+        }
+
+        .btn-learn-now {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #ffffff !important;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(106, 17, 203, 0.2);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: auto;
+        }
+
+        .btn-learn-now:hover {
+            background: linear-gradient(135deg, #ff0844 0%, #ff5858 100%);
+            box-shadow: 0 4px 12px rgba(255, 8, 68, 0.3);
+            transform: translateY(-2px);
         }
 
         @media (max-width: 576px) {
@@ -838,39 +866,48 @@
                 <!-- Card 1 -->
                 <div class="col-12 col-md-4">
                     <div class="teach-card">
-                        <div class="teach-img-wrapper">
-                            <img src="images/Reiki_1.png" alt="Reiki 1st Degree" onerror="this.src='https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=600&q=80'">
+                        <div class="teach-card-content-wrap">
+                            <div class="teach-img-wrapper">
+                                <img src="images/Reiki_1.png" alt="Reiki 1st Degree" onerror="this.src='https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=600&q=80'">
+                            </div>
+                            <h3 class="teach-card-title">Reiki 1st Degree</h3>
+                            <p class="teach-card-desc">
+                               This two-day, in-person seminar includes approximately 10 hours of instruction. Reiki Level 1 establishes a foundation for cultivating greater self-awareness, relaxation, inner peace, and deeper understanding of personal well-being. It also prepares participants to progress to Reiki Level 2 and continue their personal and spiritual development through the practice of Traditional Reiki healing.
+                            </p>
                         </div>
-                        <h3 class="teach-card-title">Reiki 1st Degree</h3>
-                        <p class="teach-card-desc">
-                           This two-day, in-person seminar includes approximately 10 hours of instruction. Reiki Level 1  establishes a foundation for cultivating greater self-awareness, relaxation, inner peace, and deeper understanding of personal well-being. It also prepares participants to progress to Reiki Level 2 and continue their personal and spritual development through the practice of Traditional Reiki healing.
-                        </p>
+                        <a href="#contact" class="btn-learn-now">Learn Now</a>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="col-12 col-md-4">
                     <div class="teach-card">
-                        <div class="teach-img-wrapper">
-                            <img src="images/Reiki-2nd.png" alt="Reiki 2nd Degree" onerror="this.src='https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?auto=format&fit=crop&w=600&q=80'">
+                        <div class="teach-card-content-wrap">
+                            <div class="teach-img-wrapper">
+                                <img src="images/Reiki-2nd.png" alt="Reiki 2nd Degree" onerror="this.src='https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?auto=format&fit=crop&w=600&q=80'">
+                            </div>
+                            <h3 class="teach-card-title">Reiki 2nd Degree</h3>
+                            <p class="teach-card-desc">
+                                Reiki Level 2 is designed for students who have successfully completed 21 days of self-Reiki practice following the completion of Reiki Level 1. This course supports practitioners in developing distance healing skills, fostering personal growth through guided Reiki meditations, and cultivating a deeper understanding of the inner self. 
+                            </p>
                         </div>
-                        <h3 class="teach-card-title">Reiki 2nd Degree</h3>
-                        <p class="teach-card-desc">
-                            Reiki Level 2 is designed for students who have successfully completed 21 days of self-Reiki practice following the completion of Reiki Level 1. This course supports practitioners in developing distance healing skills, fostering personal growth through guided Reiki meditations, and cultivating a deeper understanding of the inner self. 
-                        </p>
+                        <a href="#contact" class="btn-learn-now">Learn Now</a>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="col-12 col-md-4">
                     <div class="teach-card">
-                        <div class="teach-img-wrapper">
-                            <img src="images/crystal_healing.png" alt="Crystal Seminar" onerror="this.src='https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80'">
+                        <div class="teach-card-content-wrap">
+                            <div class="teach-img-wrapper">
+                                <img src="images/crystal_healing.png" alt="Crystal Seminar" onerror="this.src='https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80'">
+                            </div>
+                            <h3 class="teach-card-title">Crystal Seminar</h3>
+                            <p class="teach-card-desc">
+                                This course is designed for 2nd degree Reiki students who wish to deepen their connection with crystals which increases the energy vibrations multiple times and explore traditional healing practices. You will develop knowledge and practice skills to incorporate crystals into your personal wellness and spiritual wellness journey with the programmed crystals provided to you in the Course. 
+                            </p>
                         </div>
-                        <h3 class="teach-card-title">Crystal Seminar</h3>
-                        <p class="teach-card-desc">
-                            This course is designed for 2nd degree Reiki students who wish to deepen their connection with crystals which increases the energy vibrations multiple times and explore traditional healing practices. You will develop knowledge and practice skills to incoporate crystals into your persnal wellness and spiritual wellness journey with the programmed crystals provided to you in the Course. 
-                        </p>
+                        <a href="#contact" class="btn-learn-now">Learn Now</a>
                     </div>
                 </div>
             </div>
