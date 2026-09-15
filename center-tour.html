@@ -30,9 +30,16 @@
             background-color: #f8f9fa;
             overflow-x: hidden;
             color: #222222;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
-        img, video {
+        main {
+            flex: 1;
+        }
+
+        img, video, iframe {
             max-width: 100%;
             height: auto;
         }
@@ -273,10 +280,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
                     <div class="ratio ratio-16x9 rounded-3 shadow overflow-hidden">
-                        <video controls poster="images/center1.jpeg">
-                            <source src="https://youtu.be/wP6PT5NRDg8?si=2Ew4q--Hc17s3HU9" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <iframe src="https://www.youtube.com/embed/wP6PT5NRDg8" title="Center Video Tour" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     <p class="text-dark text-center small mt-2">Walkthrough video of the Meditation & Reiki Healing Space.</p>
                 </div>
